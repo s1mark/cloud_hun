@@ -1,4 +1,5 @@
 resource "local_file" "foo" {
-  content  = "foo!"
-  filename = "C:/Egyetem/Felhő"
+    for_each = var.map_of_type
+    content  = each.value
+    filename = each.key
 }
