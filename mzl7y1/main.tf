@@ -1,4 +1,5 @@
 resource "local_file" "foo" {
-  content  = "foo!"
-  filename = "C:\Users\user\terraform"
+  for_each = var.map_of_files
+  content  = each.value
+  filename = each.key
 }
