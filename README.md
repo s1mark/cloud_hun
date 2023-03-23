@@ -28,5 +28,5 @@ Before starting your work it is advised to pull down the changes that have been 
 ### switch back to your branch
 * `$(main)  git checkout my-branch`
 ### merge main changes
-Since you have pulled down changed that were made on the main branch. It is advised to merge it to your branch.
+Since you have pulled down changes that were made on the main branch. It is advised to merge it to your branch.
 * `$(my-branch)  git merge main`
