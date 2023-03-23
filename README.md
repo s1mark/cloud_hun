@@ -10,7 +10,8 @@
 Change your working directory where you want to download the repository and then issue the following command
 * `$  git clone https://github.com/s1mark/cloud_hun.git`
 ### create a new branch
-Create a new branch originated from the main branch
+Create a new branch originated from the main branch. Refresh main prior
+* `$(main)  git pull`
 * `$(main)  git checkout -b my-branch main`
 ### add your changes
 After working on your branch add a specific file/path or add every change 
