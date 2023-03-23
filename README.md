@@ -5,6 +5,11 @@
 * Terraform binary - https://developer.hashicorp.com/terraform/downloads
 * Terraform site - https://www.terraform.io/
 
+## gcloud
+### login to gcp
+* `gcloud auth login`
+* `gcloud auth application-default login`
+
 ## terraform
 Change the directory to your workspace
 ### initialize your code workspace
