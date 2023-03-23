@@ -5,6 +5,16 @@
 * Terraform binary - https://developer.hashicorp.com/terraform/downloads
 * Terraform site - https://www.terraform.io/
 
+## terraform
+### initialize your code workspace
+* `terraform init`
+### plan your infrastructure
+* `terraform plan`
+### apply your changes
+* `terraform apply`
+### destroy your infrastructure
+* `terraform destroy`
+
 ## git
 ### clone the repository
 Change your working directory where you want to download the repository and then issue the following command
