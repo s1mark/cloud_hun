@@ -6,6 +6,7 @@
 * Terraform site - https://www.terraform.io/
 
 ## terraform
+Change the directory to your workspace
 ### initialize your code workspace
 * `terraform init`
 ### plan your infrastructure
