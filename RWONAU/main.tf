@@ -1,4 +1,4 @@
 resource "local_file" "foo" {
-  content  = "foo!"
-  filename = "C:\Users\user\terraform"
+  content  = "var.file_content"
+  filename = "D:/Cloud_Rwonau/cloud_hun/RWONAU"
 }
