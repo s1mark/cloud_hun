@@ -8,7 +8,7 @@
 ### git
 #### clone the repository
 Change your working directory where you want to download the repository
-* `$(main)  git clone https://github.com/s1mark/cloud_hun.git`
+* `$  git clone https://github.com/s1mark/cloud_hun.git`
 #### create a new branch
 Create a new branch originated from the main branch
 * `$(main)  git checkout -b my-branch main`
