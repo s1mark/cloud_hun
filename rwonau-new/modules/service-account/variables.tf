@@ -1,7 +1,6 @@
 variable "project_id" {
-  description = "The ID of the project in which to provision resources."
+  description = "ekke-cloud"
   type        = string
-  default     = "ekke-cloud"
 }
 
 variable "prefix" {
