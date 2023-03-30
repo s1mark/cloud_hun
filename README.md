@@ -5,12 +5,29 @@
 * Terraform binary - https://developer.hashicorp.com/terraform/downloads
 * Terraform site - https://www.terraform.io/
 
+## gcloud
+### login to gcp
+* `gcloud auth login`
+* `gcloud auth application-default login`
+
+## terraform
+Change the directory to your workspace
+### initialize your code workspace
+* `terraform init`
+### plan your infrastructure
+* `terraform plan`
+### apply your changes
+* `terraform apply`
+### destroy your infrastructure
+* `terraform destroy`
+
 ## git
 ### clone the repository
 Change your working directory where you want to download the repository and then issue the following command
 * `$  git clone https://github.com/s1mark/cloud_hun.git`
 ### create a new branch
-Create a new branch originated from the main branch
+Create a new branch originated from the main branch. Refresh main prior
+* `$(main)  git pull`
 * `$(main)  git checkout -b my-branch main`
 ### add your changes
 After working on your branch add a specific file/path or add every change 
