@@ -5,7 +5,6 @@ module "service_accounts" {
   prefix        = var.prefix
   names         = ["O48WRX"]
   project_roles = [
-    "project-foo=>roles/viewer",
-    "project-spam=>roles/storage.objectViewer",
+    "ekke-cloud=>roles/viewer"
   ]
 }
