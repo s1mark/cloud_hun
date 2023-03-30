@@ -30,7 +30,7 @@ variable "region" {
 
 variable "subnetwork" {
   description = "The name of the subnetwork create this instance in."
-  default     = ""
+  default     = "default"
 }
 
 variable "service_account" {

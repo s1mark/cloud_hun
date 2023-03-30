@@ -43,5 +43,13 @@ module "instance_template" {
   access_config                = [local.access_config]
   enable_nested_virtualization = var.enable_nested_virtualization
   threads_per_core             = var.threads_per_core
-  machine_type = "f1_micro"
+  machine_type = "f1-micro"
 }
+
+module "compute_instance" {
+  source              = "git::https://github.com/terraform-google-modules/terraform-google-vm.git//modules/compute_instance"
+  instance_template   = module.instance_template.self_link
+}
+
+
+
