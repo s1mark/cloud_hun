@@ -73,7 +73,13 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-
+    - name: Configure Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        version: '290.0.1'
+        project_id: ekke-cloud
+        service_account_email: pipeline@ekke-cloud.iam.gserviceaccount.com
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
@@ -84,15 +90,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      env: 
-        GOOGLE_CREDENTIAL: ${{ secrets.GCP_SA_KEY }}
-        GOOGLE_APPLICATION_CREDENTIAL: ~/auth.json
-      run: |
-          touch ~/auth.json
-          echo "$GOOGLE_CREDENTIAL" >> ~/auth.json
-          terraform plan -input=false
-      shell: bash
- 
+      run: terraform plan -input=false
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
