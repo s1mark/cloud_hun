@@ -1,3 +1,3 @@
-module "rwlptd-pipeline"{
-    source = "./rwlptd"
+module "rwlptd-pipeline" {
+  source = "./rwlptd"
 }
