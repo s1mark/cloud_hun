@@ -1,5 +1,5 @@
 variable "map_of_files" {
-  type = map
+  type = map(any)
   default = {
     "D:\\tcwzgo\\bar1.txt" = "bar1"
     "D:\\tcwzgo\\bar2.txt" = "bar2"
