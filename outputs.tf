@@ -1,3 +1,7 @@
+provider "google" {
+  project     = "ekke-cloud"
+}
+
 output "test" {
   value = "test"
 }
