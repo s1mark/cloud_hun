@@ -1,3 +1,3 @@
 module "bqm3yr-pipeline" {
- source = "./bqm3yr"
+  source = "./bqm3yr"
 }
