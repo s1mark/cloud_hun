@@ -85,7 +85,7 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run:
-        echo ${{ secrets.GCP_SA_KEY }} >> ~/auth.json
+        echo "${{ secrets.GCP_SA_KEY }}" >> ~/auth.json
         export GOOGLE_APPLICATION_CREDENTIALS=~/auth.json
         terraform plan -input=false
 
