@@ -3,7 +3,7 @@ provider "google" {
 }
 
 output "test" {
-  value = "test"
+  value = "test2"
 }
 
 data "google_project" "project" {
