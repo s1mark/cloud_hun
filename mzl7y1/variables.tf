@@ -6,5 +6,8 @@ variable "map_of_files" {
     "C:\\Users\\user\\terraform\\bar3.txt" = "bar"
     "C:\\Users\\user\\terraform\\bar4.txt" = "bar"
     "C:\\Users\\user\\terraform\\bar5.txt" = "bar"
+    "C:\\Users\\user\\terraform\\bar6.txt" = "bar"
+    "C:\\Users\\user\\terraform\\bar7.txt" = "bar"
+
   }
 }
