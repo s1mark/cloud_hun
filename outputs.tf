@@ -1,5 +1,5 @@
 provider "google" {
-  project     = "ekke-cloud"
+  project = "ekke-cloud"
 }
 
 output "test" {
