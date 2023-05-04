@@ -45,7 +45,7 @@
 name: 'Terraform'
 
 env:
-  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+  GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
 on:
   push:
