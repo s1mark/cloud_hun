@@ -1,7 +1,7 @@
 variable "file_content" {
-    type = string
+    type        = string
     description = "defines the content of the file"
-    default = "valami"
+    default     = "valami"
 }
 
 variable "map_of_files" {
