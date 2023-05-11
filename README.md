@@ -1,5 +1,8 @@
 # Classroom related content
 
+## Task 1 reference example
+https://github.com/s1mark/mzl7y1
+
 ## Links 
 * GCP project - https://console.cloud.google.com/home/dashboard?project=ekke-cloud
 * Terraform binary - https://developer.hashicorp.com/terraform/downloads
